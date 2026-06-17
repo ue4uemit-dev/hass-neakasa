@@ -29,7 +29,7 @@ class NeakasaAPIData:
     bucketStatus: int
     room_of_bin: int
     youngCatMode: bool
-    childLockOnOff: bool
+    childLockOnOff: int
     autoBury: bool
     autoLevel: bool
     silentMode: bool
