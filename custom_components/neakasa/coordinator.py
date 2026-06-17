@@ -29,7 +29,6 @@ class NeakasaAPIData:
     bucketStatus: int
     room_of_bin: int
     youngCatMode: bool
-    childLockOnOff: int
     autoBury: bool
     autoLevel: bool
     silentMode: bool
@@ -97,7 +96,6 @@ class NeakasaCoordinator(DataUpdateCoordinator):
             return NeakasaAPIData(
                 binFullWaitReset=devicedata['binFullWaitReset']['value'] == 1, #-> Abfalleimer voll
                 youngCatMode=devicedata['youngCatMode']['value'] == 1, #-> Kätzchen Modus
-                childLockOnOff=devicedata['childLockOnOff']['value'] == 1, #-> Kindersicherung
                 autoBury=devicedata['autoBury']['value'] == 1, #-> automatische Abdeckung
                 autoLevel=devicedata['autoLevel']['value'] == 1, #-> automatische Nivellierung
                 silentMode=devicedata['silentMode']['value'] == 1, #-> Stiller Modus
