@@ -29,13 +29,13 @@ class NeakasaAPIData:
     bucketStatus: int
     room_of_bin: int
     youngCatMode: bool
-    childLockOnOff: bool
+    #childLockOnOff: bool
     autoBury: bool
     autoLevel: bool
-    silentMode: bool
+    #silentMode: bool
     wifiRssi: int
     autoForceInit: bool
-    bIntrptRangeDet: bool
+    #bIntrptRangeDet: bool
     stayTime: int
     lastUse: int
 
