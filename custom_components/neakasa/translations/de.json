@@ -35,6 +35,9 @@
         "binary_sensor": {
             "bin_full": {
                 "name": "Abfalleimer voll"
+            },
+            "need_clean": {
+                "name": "Reinigung benötigt"
             }
         },
         "sensor": {
