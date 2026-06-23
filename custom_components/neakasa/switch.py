@@ -42,24 +42,24 @@ async def async_setup_entry(
         NeakasaSwitch(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
         ), translation="young_cat_mode", key="youngCatMode", visible=False, icon="mdi:cat"),
-        NeakasaSwitch(coordinator, DeviceInfo(
-            identifiers={(DOMAIN, coordinator.deviceid)}
-        ), translation="child_lock", key="childLockOnOff", icon="mdi:lock-alert"),
+        #NeakasaSwitch(coordinator, DeviceInfo(
+            #identifiers={(DOMAIN, coordinator.deviceid)}
+        #), translation="child_lock", key="childLockOnOff", icon="mdi:lock-alert"),
         NeakasaSwitch(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
         ), translation="auto_bury", key="autoBury", icon="mdi:window-closed"),
         NeakasaSwitch(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
         ), translation="auto_level", key="autoLevel", icon="mdi:spirit-level"),
-        NeakasaSwitch(coordinator, DeviceInfo(
-            identifiers={(DOMAIN, coordinator.deviceid)}
-        ), translation="silent_mode", key="silentMode", icon="mdi:volume-off"),
+        #NeakasaSwitch(coordinator, DeviceInfo(
+            #identifiers={(DOMAIN, coordinator.deviceid)}
+        #), translation="silent_mode", key="silentMode", icon="mdi:volume-off"),
         NeakasaSwitch(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
         ), translation="auto_recovery", key="autoForceInit", visible=False, icon="mdi:alert-outline"),
-        NeakasaSwitch(coordinator, DeviceInfo(
-            identifiers={(DOMAIN, coordinator.deviceid)}
-        ), translation="unstoppable_cycle", key="bIntrptRangeDet", icon="mdi:cached")
+        #NeakasaSwitch(coordinator, DeviceInfo(
+            #identifiers={(DOMAIN, coordinator.deviceid)}
+        #), translation="unstoppable_cycle", key="bIntrptRangeDet", icon="mdi:cached")
     ]
 
     # Create the sensors.
