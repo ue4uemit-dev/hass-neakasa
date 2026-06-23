@@ -41,7 +41,7 @@ async def async_setup_entry(
     sensors = [
         NeakasaSwitch(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
-        ), translation="young_cat_mode", key="youngCatMode", visible=False, icon="mdi:cat"),
+        ), translation="young_cat_mode", key="youngCatMode", icon="mdi:cat"),
         #NeakasaSwitch(coordinator, DeviceInfo(
             #identifiers={(DOMAIN, coordinator.deviceid)}
         #), translation="child_lock", key="childLockOnOff", icon="mdi:lock-alert"),
@@ -56,7 +56,7 @@ async def async_setup_entry(
         #), translation="silent_mode", key="silentMode", icon="mdi:volume-off"),
         NeakasaSwitch(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
-        ), translation="auto_recovery", key="autoForceInit", visible=False, icon="mdi:alert-outline"),
+        ), translation="auto_recovery", key="autoForceInit", icon="mdi:alert-outline"),
         #NeakasaSwitch(coordinator, DeviceInfo(
             #identifiers={(DOMAIN, coordinator.deviceid)}
         #), translation="unstoppable_cycle", key="bIntrptRangeDet", icon="mdi:cached")
