@@ -40,7 +40,7 @@ async def async_setup_entry(
         ), translation="wifi_rssi", key="wifiRssi", unit=SIGNAL_STRENGTH_DECIBELS, visible=False, category=EntityCategory.DIAGNOSTIC, icon="mdi:wifi"),
         NeakasaSensor(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
-        ), translation="stay_time", key="stayTime", unit=UnitOfTime.SECONDS, visible=False),
+        ), translation="stay_time", key="stayTime", unit=UnitOfTime.SECONDS),
         NeakasaTimestampSensor(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
         ), translation="last_usage", key="lastUse"),
