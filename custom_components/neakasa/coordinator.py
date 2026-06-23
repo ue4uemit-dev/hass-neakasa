@@ -38,6 +38,7 @@ class NeakasaAPIData:
     #bIntrptRangeDet: bool
     stayTime: int
     lastUse: int
+    needclean: bool
 
 
 class NeakasaCoordinator(DataUpdateCoordinator):
@@ -110,7 +111,8 @@ class NeakasaCoordinator(DataUpdateCoordinator):
                 room_of_bin=devicedata['room_of_bin']['value'], #-> Abfalleimer [2=nicht in Position,0=Normal]
                 sandLevelState=devicedata['Sand']['value']['level'], #-> Katzenstreu [0=Unzureichend,1=Mäßig,2=Ausreichend]
                 stayTime=devicedata['catLeft']['value']['stayTime'],
-                lastUse=devicedata['catLeft']['time']
+                lastUse=devicedata['catLeft']['time'],
+                needclean=devicedata['catLeft']['value']['needClean'] == 1, #-> Reinigung benötigt
             )
         except APIAuthError as err:
             _LOGGER.error(err)
