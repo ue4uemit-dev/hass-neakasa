@@ -43,7 +43,13 @@ async def async_setup_entry(
             name=coordinator.devicename,
             manufacturer="Neakasa",
             identifiers={(DOMAIN, coordinator.deviceid)}
-        ), translation="bin_full", key="binFullWaitReset", icon="mdi:delete-empty")
+        ), translation="bin_full", key="binFullWaitReset", icon="mdi:delete-empty"),
+        NeakasaBinarySensor(coordinator, DeviceInfo(
+            #only generate device once!
+            name=coordinator.devicename,
+            manufacturer="Neakasa",
+            identifiers={(DOMAIN, coordinator.deviceid)}
+        ), translation="need_clean", key="needclean", icon="mdi:delete-empty")
     ]
 
     # Create the sensors.
