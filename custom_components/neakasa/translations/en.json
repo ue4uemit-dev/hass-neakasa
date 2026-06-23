@@ -35,6 +35,9 @@
         "binary_sensor": {
             "bin_full": {
                 "name": "Garbage can full"
+            },
+            "need_clean": {
+                "name": "Needs to be cleaned"
             }
         },
         "sensor": {
