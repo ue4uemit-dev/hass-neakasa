@@ -98,12 +98,12 @@ class NeakasaCoordinator(DataUpdateCoordinator):
             return NeakasaAPIData(
                 binFullWaitReset=devicedata['binFullWaitReset']['value'] == 1, #-> Abfalleimer voll
                 youngCatMode=devicedata['youngCatMode']['value'] == 1, #-> Kätzchen Modus
-                childLockOnOff=devicedata['childLockOnOff']['value'] == 1, #-> Kindersicherung
+                #childLockOnOff=devicedata['childLockOnOff']['value'] == 1, #-> Kindersicherung
                 autoBury=devicedata['autoBury']['value'] == 1, #-> automatische Abdeckung
                 autoLevel=devicedata['autoLevel']['value'] == 1, #-> automatische Nivellierung
-                silentMode=devicedata['silentMode']['value'] == 1, #-> Stiller Modus
+                #silentMode=devicedata['silentMode']['value'] == 1, #-> Stiller Modus
                 autoForceInit=devicedata['autoForceInit']['value'] == 1, #-> automatische Wiederherstellung
-                bIntrptRangeDet=devicedata['bIntrptRangeDet']['value'] == 1, #-> Unaufhaltsamer Kreislauf
+                #bIntrptRangeDet=devicedata['bIntrptRangeDet']['value'] == 1, #-> Unaufhaltsamer Kreislauf
                 sandLevelPercent=devicedata['Sand']['value']['percent'], #-> Katzenstreu Prozent
                 wifiRssi=devicedata['NetWorkStatus']['value']['WiFi_RSSI'], #-> WLAN RSSI
                 bucketStatus=devicedata['bucketStatus']['value'], #-> Aktueller Status [0=Leerlauf,2=Reinigung,3=Nivellierung]
