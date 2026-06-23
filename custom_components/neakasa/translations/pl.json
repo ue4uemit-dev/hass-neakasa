@@ -35,6 +35,9 @@
         "binary_sensor": {
             "bin_full": {
                 "name": "Pojemnik pełen"
+            },
+            "need_clean": {
+                "name": "Należy wyczyścić"
             }
         },
         "sensor": {
