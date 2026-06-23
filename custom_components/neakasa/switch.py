@@ -44,6 +44,9 @@ async def async_setup_entry(
         ), translation="young_cat_mode", key="youngCatMode", visible=False, icon="mdi:cat"),
         NeakasaSwitch(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
+        ), translation="child_lock", key="childLockOnOff", icon="mdi:lock-alert"),
+        NeakasaSwitch(coordinator, DeviceInfo(
+            identifiers={(DOMAIN, coordinator.deviceid)}
         ), translation="auto_bury", key="autoBury", icon="mdi:window-closed"),
         NeakasaSwitch(coordinator, DeviceInfo(
             identifiers={(DOMAIN, coordinator.deviceid)}
