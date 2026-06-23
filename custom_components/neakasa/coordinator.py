@@ -94,7 +94,7 @@ class NeakasaCoordinator(DataUpdateCoordinator):
         try:
             await self.api.connect(self.username, self.password)
             devicedata = await self.api.getDeviceProperties(self.deviceid)
-            _LOGGER.info(devicedata)
+            _LOGGER.warning("Neakasa response: %s", devicedata)
             return NeakasaAPIData(
                 binFullWaitReset=devicedata['binFullWaitReset']['value'] == 1, #-> Abfalleimer voll
                 youngCatMode=devicedata['youngCatMode']['value'] == 1, #-> Kätzchen Modus
